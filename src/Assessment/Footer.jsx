@@ -110,7 +110,7 @@ const Footer = () => {
       </Col>
       <Col xl={8} className='pt-5' style={{display:"flex",justifyContent:"center", color:"whitesmoke", alignItems:"center"}}>
 <Col xl={6}> 
-<div><h5>Company Info</h5>  </div>
+<div><h5>Company Infomation</h5>  </div>
 <div>
   <p>About Us</p>
   <p>Assimilate</p>
