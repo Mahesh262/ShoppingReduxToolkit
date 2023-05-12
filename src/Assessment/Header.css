@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left:0;
+  }
+  .dropdown-container {
+    position: relative;
+    border: 2px solid red;
+  }
+
+  .search-input {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-input input[type="text"] {
+    padding-left: 30px; /* Set left padding to accommodate the icon */
+    background: #daa3a3e9; /* Set input background color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 250px;
+    height: 40px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 29px; /* Position the icon vertically */
+    right: 20px; /* Position the icon horizontally */
+    color: #555; /* Set icon color */
+    font-size: 23px;
+  }
+  .swiper-slide {
+    height: 400px;
+  }
+  .three-lines {
+    display: inline-block;
+    width: 100%;
+     font-size:2.9em;
+    line-height: 1.1em;
+    max-height: 5em;
+    text-overflow: ellipsis;
+  }
