@@ -1,26 +1,23 @@
-import "./App.css";
-import Footer from "./Assessment/Footer";
-import Header from "./Assessment/Header";
-import MainContent from "./Assessment/MainContent";
-import StickyFooter from "./Assessment/StickyFooter";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./OnlineExam/Home";
+import ExamList from "./OnlineExam/ExamList";
+import ExamDetails from "./OnlineExam/ExamDetails";
+import ExamForm from "./OnlineExam/ExamForm";
+import ExamAttendance from "./OnlineExam/ExamAttendance";
+import Report from "./OnlineExam/Report";
 
-function App() {
+const App = () => {
   return (
-    <div className="app">
-      <div classsName="headers">
-        <Header />
-      </div>
-      <div className="Mainpage">
-        <MainContent />
-      </div>
-      <div className="FooterPage">
-        <Footer />
-      </div>
-      <div className="Stickypage">
-        <StickyFooter />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<ExamList />} />
+      <Route path="*" element={<Home />} />
+      <Route path="/exams/create" element={<ExamForm />} />
+      <Route path="/exams/:id" element={<ExamDetails />} />
+      <Route path="/exams/:id/attend" element={<ExamAttendance />} />
+      <Route path="/exams/:id/report" element={<Report />} />
+    </Routes>
   );
-}
+};
 
 export default App;
