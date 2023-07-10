@@ -1,22 +1,30 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./OnlineExam/Home";
-import ExamList from "./OnlineExam/ExamList";
-import ExamDetails from "./OnlineExam/ExamDetails";
-import ExamForm from "./OnlineExam/ExamForm";
-import ExamAttendance from "./OnlineExam/ExamAttendance";
-import Report from "./OnlineExam/Report";
+import React, { lazy, Suspense } from "react";
+import "./PortFoilio/Common/common.scss";
+
+// Import the fallback component
+
+const Loading = () => <div>Loading...</div>;
+
+// Lazy load the component
+const Home = lazy(() => import("./PortFoilio/Home"));
+const About = lazy(() => import("./PortFoilio/About"));
+const Portfolio = lazy(() => import("./PortFoilio/Portfolio"));
+const Resume = lazy(() => import("./PortFoilio/Resume"));
+const Contact = lazy(() => import("./PortFoilio/Contact"));
+const LandingPage = lazy(() => import("./LandingPage"));
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<ExamList />} />
-      <Route path="*" element={<Home />} />
-      <Route path="/exams/create" element={<ExamForm />} />
-      <Route path="/exams/:id" element={<ExamDetails />} />
-      <Route path="/exams/:id/attend" element={<ExamAttendance />} />
-      <Route path="/exams/:id/report" element={<Report />} />
-    </Routes>
+    <>
+      <Suspense fallback={<Loading />}>
+        <LandingPage />
+        <Home />
+        <About />
+        <Resume />
+        <Portfolio />
+        <Contact />
+      </Suspense>
+    </>
   );
 };
 
