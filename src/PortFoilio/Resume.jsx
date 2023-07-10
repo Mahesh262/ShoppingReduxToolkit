@@ -7,7 +7,7 @@ const Resume = () => {
       backgroundImage: "url('https://images.unsplash.com/photo-1627398362552-6a029c1f583c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')",backgroundPosition:"center",backgroundRepeat:"no-repeat", backgroundAttachment:"fixed", 
        height:"120vh",
       backgroundSize:"cover", 
-      overflow:"hidden"
+      overflow:"hidden",
     }}>
      <Row style={{textAlign:"center", padding:"5em",color:"wheat"}}> <h2>My <b>Resume</b></h2> </Row>
       <Row>
