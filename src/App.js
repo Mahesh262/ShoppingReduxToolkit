@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import "./PortFoilio/Common/common.scss";
-
+import ParticlesBg from "particles-bg";
 // Import the fallback component
 
 const Loading = () => <div>Loading...</div>;
