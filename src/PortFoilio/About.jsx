@@ -17,7 +17,7 @@ const About = () => {
             <Row style={{display:"flex",justifyContent:"space-around"}}>
               <Col>
               <p>Location:Hyderbad</p>
-              <p>Age: 30</p>
+              <p>Age:27</p>
               <p style={{display:"inline"}}>Nationality:<span>Hindhu</span></p>
               </Col>
               <Col>
