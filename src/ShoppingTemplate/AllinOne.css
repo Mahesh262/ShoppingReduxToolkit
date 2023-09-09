@@ -1,0 +1,36 @@
+/* Allinone.css */
+body{
+  background-image: url('https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'); /* Update the path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+
+}
+.search-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-field {
+    border-radius: 25px 0 0 25px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+  }
+  
+  .search-button {
+    border-radius: 0 25px 25px 0;
+    background-color: #4178b4b0;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  

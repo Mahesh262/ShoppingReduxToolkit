@@ -1,0 +1,43 @@
+/* LiquidButton.css */
+.liquid-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    background: linear-gradient(90deg, rgb(54, 109, 131), rgb(67, 168, 81)), #007bff;
+    /* background-image: radial-gradient(circle at 30% 0%, rgb(54, 109, 131) 100%, rgb(67, 168, 81) 15%); */
+  }
+  
+  .original-button:hover {
+    opacity: .5;
+  }
+
+
+  
+  .liquid-button::before {
+    content: "";
+    background: radial-gradient(circle, transparent 30%, #da9514 40%, transparent 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: center;
+    opacity: 0.6;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  }
+  
+  .liquid-button:hover::before {
+    transform: scale(3);
+    opacity: 0;
+  }
+  
