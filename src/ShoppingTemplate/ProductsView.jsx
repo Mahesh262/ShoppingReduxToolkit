@@ -21,7 +21,7 @@ const ProductsView = () => {
                     </Col>
                     <Col xl={4}className='pt-5'>
                     <h5>Price:${items.price}</h5>
-                    <p style={{whiteSpace:"pre-wrap"}}>{items.description}</p>
+                    <p style={{whiteSpace:"pre-wrap", color:"wheat"}}>{items.description}</p>
                     <p>Rating: {items.rating.rate}</p>
                      <p><Link to={`/Shop`}><AiOutlineShoppingCart style={{fontSize:"3em",color:"tomato"}}/></Link></p>
                     </Col>
